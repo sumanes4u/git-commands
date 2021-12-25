@@ -1,11 +1,11 @@
-# git-commands
-git cheat sheet
+https://sumanes4u.github.io/git-commands/
 
+Be on workingdir and git init 
 //git init
 
 //git status
 
-//got add 
+//git add <filename>
 
 //git add -A
 All untracked filed to staging area
@@ -15,10 +15,18 @@ All untracked filed to staging area
 //git log --oneline
 
 
-//git revert 
+//git revert HEAD
+
+//git reset --soft <commit ID>
+
+//git reset --hard <commit ID>
 
 
-git reset --soft, which will keep your files, and stage all changes back automatically. git reset --hard, which will completely destroy any changes and remove them from the local directory. Only use this if you know what you’re doing.
+//git reset --soft
+which will keep your files, and stage all changes back automatically. 
+
+//git reset --hard
+ which will completely destroy any changes and remove them from the local directory. Only use this if you know what you’re doing.
 
 Create a new branch
 //git checkout -b <dev-branch>
@@ -34,13 +42,17 @@ Here dev branches gets merged to master branch
 GIT and GITHUB
 
 //generate SSH keys using 
-Ssh-keygen
+ssh-keygen
 
 //copy the the public KEY and add into GITHUB
 Cat /Users/samarthi/.ssh/id_rsa.pub
 
-GUTHUB setting NEW ssh keys
+GITHUB->setting-> NEW ssh keys
 
 //Local machine perform 
 ssh -T git@github.com 
-![image](https://user-images.githubusercontent.com/34158104/147388926-55e5b84e-9e9e-44fb-9cab-7bd43bfb5a9c.png)
+
+
+
+//git push origin
+![image](https://user-images.githubusercontent.com/34158104/147390292-88f0f24b-2564-4e62-b674-996465fd1728.png)
